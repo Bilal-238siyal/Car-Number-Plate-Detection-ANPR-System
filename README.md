@@ -56,34 +56,6 @@ This project is an AI based number plate recognition system built using two mode
 - Trained with automatic mixed precision for efficiency
 - Early stopping to prevent overfitting
 
----
-
-## Project Structure
-
-ANPR_System/
-├── data/
-│ ├── images/
-│ │ ├── train/
-│ │ ├── val/
-│ │ └── test/
-│ ├── labels/
-│ │ ├── train/
-│ │ ├── val/
-│ │ └── test/
-│ └── data.yaml
-├── models/
-│ └── best.pt
-├── notebooks/
-│ └── anpr_training.ipynb
-├── src/
-│ ├── detect.py
-│ ├── ocr_module.py
-│ └── pipeline.py
-├── outputs/
-├── samples/
-├── requirements.txt
-└── README.md
-
 
 ---
 
@@ -99,7 +71,4 @@ ANPR_System/
 
 ---
 
-## Installation
 
-```bash
-pip install ultralytics easyocr opencv-python matplotlib numpy
