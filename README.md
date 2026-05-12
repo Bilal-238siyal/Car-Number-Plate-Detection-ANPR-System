@@ -59,3 +59,47 @@ This project is an AI based number plate recognition system built using two mode
 ---
 
 ## Project Structure
+
+ANPR_System/
+├── data/
+│ ├── images/
+│ │ ├── train/
+│ │ ├── val/
+│ │ └── test/
+│ ├── labels/
+│ │ ├── train/
+│ │ ├── val/
+│ │ └── test/
+│ └── data.yaml
+├── models/
+│ └── best.pt
+├── notebooks/
+│ └── anpr_training.ipynb
+├── src/
+│ ├── detect.py
+│ ├── ocr_module.py
+│ └── pipeline.py
+├── outputs/
+├── samples/
+├── requirements.txt
+└── README.md
+
+
+---
+
+## How It Works
+
+1. User provides an image containing a vehicle
+2. YOLOv8 model detects the license plate region with bounding box
+3. Plate region is cropped from the original image
+4. Image preprocessing applied (grayscale conversion, resize, bilateral filtering)
+5. EasyOCR extracts text from the processed plate image
+6. Text is cleaned and formatted (uppercase, space removal)
+7. Final plate number is displayed with detection confidence
+
+---
+
+## Installation
+
+```bash
+pip install ultralytics easyocr opencv-python matplotlib numpy
