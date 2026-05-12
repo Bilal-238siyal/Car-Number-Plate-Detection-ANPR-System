@@ -1,7 +1,5 @@
 readme_content = """# Automated Number Plate Detection and Recognition System
 
-##readme_content = """# Automated Number Plate Detection and Recognition System
-
 ## AI Powered License Plate Detection and OCR Pipeline
 
 ---
