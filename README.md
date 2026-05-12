@@ -1,5 +1,7 @@
 readme_content = """# Automated Number Plate Detection and Recognition System
 
+##readme_content = """# Automated Number Plate Detection and Recognition System
+
 ## AI Powered License Plate Detection and OCR Pipeline
 
 ---
@@ -56,6 +58,11 @@ This project is an AI based number plate recognition system built using two mode
 - Trained with automatic mixed precision for efficiency
 - Early stopping to prevent overfitting
 
+---
+
+## Project Files
+
+- Trained Model: [Download best.pt](https://drive.google.com/file/d/1G5s5PnnL0e_GDkMi51fGEBx2fOOeJO5r/view?usp=drive_link)
 
 ---
 
@@ -71,4 +78,7 @@ This project is an AI based number plate recognition system built using two mode
 
 ---
 
+## Installation
 
+```bash
+pip install ultralytics easyocr opencv-python matplotlib numpy
